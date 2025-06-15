@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Page</title>
+  <link rel="stylesheet" href="mov.css" />
+</head>
+
+<style>
+    html{
+        background-image: url(./assets/bg.jpg);
+        color: wheat;
+        font-size: larger;
+        padding: 50px;
+        font-family: 'Times New Roman', Times, serif;       
+    }
+
+    .fst{
+        padding: 25px;
+        width: 1500px;
+        position:relative;
+        right:50px;
+        height: 700px;
+        margin: 0;
+        background-repeat: repeat; 
+        overflow-x: hidden; 
+        background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.741);  
+        bottom:80px;
+        
+    }
+
+    .sec{
+        background-color: rgb(115, 4, 4);
+        padding:30px;
+        width:500px;
+        position: relative;
+        left:160px;
+        border-radius:25px ;
+        top:40px;
+        border: 2px solid gold;
+        height: 491px;
+    }
+
+    .third{
+        background-color:rgb(115, 4, 4);
+        width:500px;
+        height:491px;
+        padding: 30px;
+        position:relative;
+        left:710px;
+        bottom:511px;
+        border-radius: 25px;
+        border: 2px solid gold;
+    }
+
+    button{
+        background-color:gold;
+        font-size: large;
+        height:40px;
+        position: relative;
+        margin:20px;
+        top:50px;
+        border-radius: 10px;
+        transition: 0.04 ease;
+
+    }
+
+    input{
+        background-color: bisque;
+    }
+
+    textarea{
+        background-color: bisque;
+    }
+
+    button:hover{
+        transform: scale(1.07);
+        border:1px solid gold;
+        background-color: rgb(115, 4, 4);
+        color:gold;
+        box-shadow: 0 0 7px gold;
+
+    }
+
+    a{
+        text-decoration: none;
+        color:black;
+    }
+
+    h2{
+        position: relative;
+        top:20px;
+    }
+
+
+</style>
+
+<body>
+        <div class="fst">
+            <h2><u>FEEDBACK FORM</u></h2><br>
+        <form>
+            <div class="sec">
+            <label for="nm"><b>Name:<b></label>
+            <p><input type="text" placeholder="Enter here" id="nm"></p><br>
+
+            <label for="eml">Email-id:</label><br>
+            <p><input type="email" placeholder="Enter here" id="eml"></p><br>
+
+            <label for="ag">Age:</label><br>
+            <input type="date" placeholder="Enter here" id="ag"><br><br>
+
+            <label for="ge">Gender:</label><br>
+            <input type="radio" id="f"><label for="f">Female</label><br>
+            <input type="radio" id="m"><label for="m">male</label><br><br>
+
+            <label for="gn">Select the Genere that you prefered most:</label><br>
+            <select name="gn" id="gn">
+                <option value="" disabled selected>Select</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Horror">Horror</option>
+                <option value="Scifi">Scifi</option>
+                <option value="Drama">Drama</option>
+                <option value="Romance">Romance</option>
+                <option value="thriller">Thriller</option>
+            </select><br><br>
+
+            <label for="rating">Give your rating to this website (1-10):</label>
+            <p><input type="range" min="0" max="10"></p><br>
+
+            </div>
+
+            <div class="third">
+            <label for="fb">Write your feedback below,</label><br><br>
+            <textarea name="fb" id="fb" rows="10" cols="40" placeholder="Type here...."></textarea><br>
+            <button>Submit feedback</button>    
+                <div class="last">
+                    <button><a href="./mov.html">Exit</a></button>
+                </div>
+            </div>
+        </form>
+        </div>
+</body>
